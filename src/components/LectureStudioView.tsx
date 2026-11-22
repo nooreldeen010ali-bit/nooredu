@@ -1311,7 +1311,7 @@ export const LectureStudioView: React.FC<LectureStudioViewProps> = ({
 
       const exportScenes = syncedAudio.alignedScenes;
       const exportTotalSec = Math.max(4, syncedAudio.totalDurationSec);
-      const fps = 8;
+      const fps = 24;
       const totalFrames = Math.max(8, Math.ceil(exportTotalSec * fps));
       const audioWavBase64 = encodeBytesToBase64(syncedAudio.wavBytes);
 
@@ -1343,8 +1343,8 @@ export const LectureStudioView: React.FC<LectureStudioViewProps> = ({
       await preloadAllMedicalAtlasImages();
 
       const offscreen = document.createElement('canvas');
-      offscreen.width = 960;
-      offscreen.height = 540;
+      offscreen.width = 1280;
+      offscreen.height = 720;
       const offCtx = offscreen.getContext('2d');
       if (!offCtx) {
         throw new Error('2D Canvas context unavailable for MP4 rendering.');
