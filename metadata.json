@@ -1,0 +1,6 @@
+{
+  "name": "MedAtlas Tutor",
+  "description": "Medical textbook AI tutor that generates structured topic explanations, page references, clinical notes, and practice MCQs from uploaded PDFs with offline access and cloud storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
